@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<form>
+ <button type="button" href="/var/www/pro/display1.php">Click Me!</button> 
+ 
+</form>
+</html>
+
