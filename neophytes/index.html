@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen"> 
+<script src="css/bootstrap-responsive.css"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
+<script>
+    function submitForm(action)
+    {
+        document.getElementById('form').action = action;
+        document.getElementById('form').submit();
+    }
+	$( document ).ready(function() {
+		setTimeout(function(){$('#myModal').modal('show')},3000)
+	});
+</script>
+
+ <style>
+
+.center
+{
+margin-left:auto;
+/*margin-top:15cm; */
+margin-right:auto;
+text-align:center;
+width:70%;
+background-color:;
+margin-top:350px;
+}    
+
+body 
+{
+
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}          
+</style>
+
+<title>
+Home away from home
+</title>
+</head>
+<body background="index-bg.JPG">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="design/bootstrap/js/bootstrap.min.js"></script>
+<div class="center" > <a class="btn btn-large btn-warning" href="#myModal" data-toggle="modal" ><i class="icon-star icon-white"></i> About Us</a> </div>
+
+<div class="modal hide fade" id="myModal" aria-hiddden="true">
+<div class="modal-header">
+ 
+ <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+ <h3 id="mymodalLabel"> <u> <i>  Home Away From Home </i> </u> </h3> 
+ </div>
+ <div class="modal-body">
+ <form id="form" method="post">
+<h2><label> State </label> </h2>
+<select name="sstate">
+<option value="00"> All </option>
+			<option value="07">Delhi</option>
+			<option value="23"> Madhya Pradesh </option>
+			<option value="32"> Kerala   </option>
+			<option value="30"> Goa  </option>
+			<option value="29"> Karnataka   </option>
+			<option value="02"> Himachal Pradesh </option>
+			<option value="01"> Jammu and Kashmir </option>
+			<option value="08"> Rajasthan </option>
+			<option value="33"> Tamil Nadu </option>
+			<option value="24"> Gujrat </option>
+			<option value="06"> Haryana </option>
+			<option value="34"> Pondicherry </option>
+			<option value="11"> Sikkim </option>
+			<option value="05"> Uttrakhand </option>
+			<option value="34"> Pudducherry </option>
+			<option value="19"> West Bengal </option>
+			<option value="21"> orissa </option>
+			<option value="03"> Punjab </option>
+			<option value="09"> Uttar Pradesh </option>
+			<option value="04"> Chandigarh </option>
+			<option value="18"> Assam </option>
+			<option value="17"> Meghalya </option>
+			<option value="27"> Maharashtra </option>
+			<option value="35"> Andaman and Nicobar </option>
+			<option value="10"> Bihar </option>
+			<option value="20"> Jharkhand </option>
+			<option value="14"> Manipur </option>
+			</select>
+            
+         <br/>
+
+<label> Type </label>  
+			<select name="stype">
+			<option value="00"> All Types </option>
+			<option value="HB">Heritage Basic</option>
+			<option value="HC"> Heritage Classic </option>
+			<option value="HG"> Heritage Grand  </option>
+			<option value="S5"> 5 Star </option>
+			<option value="SD"> 5 Star Delux </option>
+			<option value="S4"> 4 Star  </option>
+
+			</select>
+  
+ 
+	<button type="button" onClick="submitForm('map2.php')" class="btn btn-large btn-success"> <i class="icon-search icon-white"></i> Map </button></a>		
+   <button type="button" onClick="submitForm('imagetry.php')" class="btn btn-large btn-success"> <i class="icon-search icon-white"></i> Search </button></a> 
+ 
+ </form>
+</div>
+<div class="modal-footer">
+<button type="reset" class="btn">Reset</button><br/>
+</div>
+</div>
+</div>
+</body>
+</html>

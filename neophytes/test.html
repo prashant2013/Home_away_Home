@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+<body>
+<a href="#myModal" class="btn" data-toggle="modal">  launch</a>
+<div class="modal hide fade" id="myModal" aria-hiddden="true">
+<div class="modal-header">
+ <h3> home away from home </h3>
+ 
+ <form action="map2.php" method="post">
+<select name="sstate">
+<option value="00"> STATE </option>
+<option value="07">DELHI</option>
+<option value="23"> Madhya Pradesh </option>
+<option value="32"> Kerala   </option>
+<option value="30"> Goa  </option>
+<option value="29"> Karnataka   </option>
+<input type="submit">
+</select>
+ 
+ 
+</div>
+ <div class="modal-body">
+ <form>
+ <label> State </label>
+ <input type="text" class="span4"/> <br/>
+ <label> Type </label>
+ <input type="text" class="span4"/> <br/> <br/>
+ <button type="submit" class="btn btn-success"> login </button>
+  <button type="reset" class="btn">clear</button>
+ 
+ </form>
+</div>
+<div class="modal-footer">
+<button class="btn" data-dismiss="modal" aria-hidden="true"> Close </button>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    <script>
+function getCurrentLoc() {
+  // Try HTML5 geolocation
+	  if(navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(function(position) {
+		   geocoder = new google.maps.Geocoder();
+		   var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+			geocoder.geocode({'latLng': latlng}, function(results, status) {
+		if (status == google.maps.GeocoderStatus.OK) {
+		  if (results[1]) {
+			document.getElementById('start').value = results[1]['formatted_address'];
+		  } else {
+			alert('No results found');
+		  }
+		} else {
+		  alert('Geocoder failed due to: ' + status);
+		}
+
+	  });
+	});
+	}
+}
+getCurrentLoc();
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+	<input id="start" type="text" />
+  </body>
+</html>
