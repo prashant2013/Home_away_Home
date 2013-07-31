@@ -1,0 +1,111 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen"> 
+<script src="css/bootstrap-responsive.css"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
+<script>
+    function submitForm(action)
+    {
+        document.getElementById('form').action = action;
+        document.getElementById('form').submit();
+    }
+</script>
+
+ <style>
+
+.center
+{
+margin-left:auto;
+/*margin-top:15cm; */
+margin-right:auto;
+text-align:center;
+width:70%;
+background-color:;
+}
+ 
+              
+              
+</style>
+</head>
+<body >
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="design/bootstrap/js/bootstrap.min.js"></script>
+
+<center> <img src="IndiaMap.png" alt="full screen background image" id="full-screen-background-image" /></center>
+
+<div class="center" > <a class="btn btn-large btn-warning" href="#myModal" data-toggle="modal" ><i class="icon-star icon-black"></i> Lets Start!!!</a> </div>
+
+<div class="modal hide fade" id="myModal" aria-hiddden="true">
+<div class="modal-header">
+ 
+ <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+ <h3 id="mymodalLabel"> Home Away From Home </h3> 
+ </div>
+ <div class="modal-body">
+ <form id="form" method="post">
+<label> State </label>
+<select name="sstate">
+<option value="00"> All </option>
+			<option value="07">Delhi</option>
+			<option value="23"> Madhya Pradesh </option>
+			<option value="32"> Kerala   </option>
+			<option value="30"> Goa  </option>
+			<option value="29"> Karnataka   </option>
+			<option value="02"> Himachal Pradesh </option>
+			<option value="01"> Jammu and Kashmir </option>
+			<option value="08"> Rajasthan </option>
+			<option value="33"> Tamil Nadu </option>
+			<option value="24"> Gujrat </option>
+			<option value="06"> Haryana </option>
+			<option value="34"> Pondicherry </option>
+			<option value="11"> Sikkim </option>
+			<option value="05"> Uttrakhand </option>
+			<option value="34"> Pudducherry </option>
+			<option value="19"> West Bengal </option>
+			<option value="21"> orissa </option>
+			<option value="03"> Punjab </option>
+			<option value="09"> Uttar Pradesh </option>
+			<option value="04"> Chandigarh </option>
+			<option value="18"> Assam </option>
+			<option value="17"> Meghalya </option>
+			<option value="27"> Maharashtra </option>
+			<option value="35"> Andaman and Nicobar </option>
+			<option value="10"> Bihar </option>
+			<option value="20"> Jharkhand </option>
+			<option value="14"> Manipur </option>
+			</select>
+            
+         <br/>
+
+<label> Type </label>
+			<select name="stype">
+			<option value="00"> Type of Hotel </option>
+			<option value="HB">Heritage Basic</option>
+			<option value="HC"> Heritage Classic </option>
+			<option value="HG"> Heritage Grand  </option>
+			<option value="S5"> 5 Star </option>
+			<option value="SD"> 5 Star Delux </option>
+			<option value="S4"> 4 Star  </option>
+
+			</select>
+  
+ 
+			
+  <button type="reset" class="btn">Reset</button><br/>
+ <button type="submit" onClick="submitForm('map2.php')" class="btn btn-large btn-success"> Map View </button>
+ <button type="button" onClick="submitForm('imagetry.php')" class="btn btn-large btn-success"> List View </button></a>
+ 
+ </form>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</body>
+</html>
