@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","Neophytes","Neophytes","Neophytes");
+$con=mysqli_connect("localhost","","","*******");
 
 // Check connection
 if (mysqli_connect_errno($con))
